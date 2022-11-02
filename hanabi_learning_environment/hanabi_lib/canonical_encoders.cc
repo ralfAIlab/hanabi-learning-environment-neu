@@ -19,6 +19,7 @@
 #include <vector>
 
 #include "canonical_encoders.h"
+#include <numeric>
 
 namespace hanabi_learning_env {
 
