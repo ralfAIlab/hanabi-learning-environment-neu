@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HanabiSharp", "HanabiSharp.vcxproj", "{58B1B081-956A-4206-A60F-B9F93F939F88}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HanabiPlusPlus", "HanabiPlusPlus.vcxproj", "{58B1B081-956A-4206-A60F-B9F93F939F88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

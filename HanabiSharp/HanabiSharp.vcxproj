@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{58b1b081-956a-4206-a60f-b9f93f939f88}</ProjectGuid>
-    <RootNamespace>HanabiSharp</RootNamespace>
+    <RootNamespace>HanabiPlusPlus</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -136,7 +136,7 @@
     <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_observation.cc" />
     <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_state.cc" />
     <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\util.cc" />
-    <ClCompile Include="HanabiPlusPlus.cpp" />
+    <ClCompile Include="HanabiSharp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\canonical_encoders.h" />
