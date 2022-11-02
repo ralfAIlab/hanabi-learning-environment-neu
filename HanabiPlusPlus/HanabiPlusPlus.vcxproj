@@ -127,6 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\hanabi_learning_environment\pyhanabi.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\canonical_encoders.cc" />
     <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_card.cc" />
     <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_game.cc" />
@@ -139,6 +143,10 @@
     <ClCompile Include="HanabiPlusPlus.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\hanabi_learning_environment\pyhanabi.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\canonical_encoders.h" />
     <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_card.h" />
     <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_game.h" />

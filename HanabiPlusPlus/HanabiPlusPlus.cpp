@@ -2,10 +2,37 @@
 //
 
 #include <iostream>
+#include "../hanabi_learning_environment/hanabi_lib/hanabi_game.h"
+#include "../hanabi_learning_environment/hanabi_lib/hanabi_state.h"
+#include "../hanabi_learning_environment/hanabi_lib/hanabi_observation.h"
+using namespace hanabi_learning_env;
+
+const int CHANCE_PLAYER_ID = -1;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Hello World!\n";    
+    
+    std::unordered_map<std::string, std::string> params;
+    params.insert({ "players", "3" });
+    params.insert({ "random_start_player", "true" });
+
+    HanabiGame game(params);
+
+    HanabiState state(&game);
+    while (!state.IsTerminal())
+    {
+        int currentPlayer = state.CurPlayer();
+        if (currentPlayer == CHANCE_PLAYER_ID)
+        {
+            state.ApplyRandomChance();
+            continue;
+        }
+
+        HanabiObservation observation(state, currentPlayer);
+
+        auto moves = state.LegalMoves(currentPlayer);
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
