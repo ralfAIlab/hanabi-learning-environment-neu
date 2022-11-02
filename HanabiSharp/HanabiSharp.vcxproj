@@ -127,28 +127,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\canonical_encoders.cc" />
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_card.cc" />
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_game.cc" />
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_hand.cc" />
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_history_item.cc" />
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_move.cc" />
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_observation.cc" />
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_state.cc" />
-    <ClCompile Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\util.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\canonical_encoders.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_card.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_game.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_hand.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_history_item.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_move.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_observation.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\hanabi_state.cc" />
+    <ClCompile Include="..\hanabi_learning_environment\hanabi_lib\util.cc" />
     <ClCompile Include="HanabiSharp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\canonical_encoders.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_card.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_game.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_hand.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_history_item.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_move.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_observation.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\hanabi_state.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\observation_encoder.h" />
-    <ClInclude Include="..\..\..\..\deleteme\CPlusPlusConsoleApplication1\hanabi_lib\util.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\canonical_encoders.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_card.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_game.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_hand.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_history_item.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_move.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_observation.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\hanabi_state.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\observation_encoder.h" />
+    <ClInclude Include="..\hanabi_learning_environment\hanabi_lib\util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
