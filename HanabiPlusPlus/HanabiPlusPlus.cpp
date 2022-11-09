@@ -24,6 +24,21 @@ void Deal(HanabiState& state)
     }
 }
 
+/// <summary>
+/// eines der Ziele: Entscheidungsprozess für ein Zug
+/// </summary>
+/// <param name="state"></param>
+/// <param name="currentPlayer"></param>
+/// <returns></returns>
+HanabiMove* GetRandomMove(HanabiState& state, int currentPlayer)
+{
+    std::vector<HanabiMove> moves = state.LegalMoves(currentPlayer);
+    std::vector<HanabiMove>::iterator randIt = moves.begin();
+    std::advance(randIt, std::rand() % moves.size());
+    HanabiMove move = *randIt;
+    return &move;
+}
+
 int main()
 {
     std::cout << "Hello World!\n";    
@@ -44,7 +59,9 @@ int main()
 
         HanabiObservation observation(state, currentPlayer);
 
-        auto moves = state.LegalMoves(currentPlayer);
+        auto move = GetRandomMove(state, currentPlayer);
+
+        state.ApplyMove(*move);
     }
 }
 
