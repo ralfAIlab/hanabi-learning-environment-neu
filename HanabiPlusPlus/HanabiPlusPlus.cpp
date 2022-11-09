@@ -9,6 +9,21 @@ using namespace hanabi_learning_env;
 
 const int CHANCE_PLAYER_ID = -1;
 
+void Deal(HanabiState& state)
+{
+    while (!state.IsTerminal())
+    {
+        int currentPlayer = state.CurPlayer();
+        if (currentPlayer == CHANCE_PLAYER_ID)
+        {
+            state.ApplyRandomChance();
+            continue;
+        }
+
+        return;
+    }
+}
+
 int main()
 {
     std::cout << "Hello World!\n";    
@@ -20,20 +35,19 @@ int main()
     HanabiGame game(params);
 
     HanabiState state(&game);
+    
+    Deal(state);
+
     while (!state.IsTerminal())
     {
         int currentPlayer = state.CurPlayer();
-        if (currentPlayer == CHANCE_PLAYER_ID)
-        {
-            state.ApplyRandomChance();
-            continue;
-        }
 
         HanabiObservation observation(state, currentPlayer);
 
         auto moves = state.LegalMoves(currentPlayer);
     }
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
