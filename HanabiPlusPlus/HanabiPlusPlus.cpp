@@ -43,19 +43,24 @@ int main()
 {
     std::cout << "Hello World!\n";    
     
-    std::unordered_map<std::string, std::string> params;
-    params.insert({ "players", "3" });
-    params.insert({ "random_start_player", "true" });
+    std::unordered_map<std::string, std::string> gameParameter;
+    gameParameter.insert({ "players", "3" });
+    gameParameter.insert({ "random_start_player", "true" });
 
-    HanabiGame game(params);
+    HanabiGame game(gameParameter);
 
     HanabiState state(&game);
     
-    Deal(state);
+    // Deal(state);
 
     while (!state.IsTerminal())
     {
         int currentPlayer = state.CurPlayer();
+        if (currentPlayer == CHANCE_PLAYER_ID)
+        {
+            state.ApplyRandomChance();
+            continue;
+        }
 
         HanabiObservation observation(state, currentPlayer);
 
@@ -63,6 +68,8 @@ int main()
 
         state.ApplyMove(*move);
     }
+
+    std::cout <<  state.Score();
 }
 
 
